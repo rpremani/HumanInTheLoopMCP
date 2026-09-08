@@ -1,6 +1,6 @@
 # Human-in-the-Loop MCP Server
 
-> **Version:** 1.2026.0317.2158 &nbsp;|&nbsp; **Author:** CMART Solutions &nbsp;|&nbsp; **Platform:** Windows x64
+> **Version:** 1.2026.0317.2158 &nbsp;|&nbsp; **Author:** HITL &nbsp;|&nbsp; **Platform:** Windows x64
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that gives humans a structured voice inside AI-driven workflows — at the right moment, with the right context.
 
