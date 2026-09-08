@@ -88,15 +88,19 @@ Only configure the tools you intend to use — all variables are optional.
 Open `%APPDATA%\Code\User\mcp.json` and add:
 
 ```json
-{
-  "servers": {
-    "Human-In-The-Loop": {
+ "Human-In-The-Loop": {
       "type": "stdio",
-      "command": "C:\\Tools\\hitl\\human-in-the-loop-mcp-server.exe",
-      "args": []
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "& \"$env:LOCALAPPDATA\\Microsoft\\WindowsApps\\python.exe\" 'C:\\Work\\HumanInTheLoop-HITL\\HumanInTheLoop-HITL\\server-source-final\\server.py'"
+      ],
+      "env": {
+        "HITL_FEEDBACK_UI_PATH": "C:\\Work\\HumanInTheLoop-HITL\\HumanInTheLoop-HITL\\feedback-ui\\bin\\Release\\net8.0-windows\\feedback-ui.dll",
+        "PYTHONPATH": "C:\\Work\\HumanInTheLoop-HITL\\HumanInTheLoop-HITL\\server-source-final\\deps"
+      }
     }
-  }
-}
 ```
 
 ### 4. Restart VS Code
