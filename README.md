@@ -159,4 +159,4 @@ See [HITL_MCP_Server_Documentation.md](HITL_MCP_Server_Documentation.md) for ful
 
 ## License
 
-&copy; CMART Solutions. All rights reserved.
+&copy; HITL. All rights reserved.
