@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>feedback-ui</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="user-check-light.png" />
+    <None Remove="mainwindow.baml" />
+    <None Remove="user-check-dark.png" />
+    <None Remove="HITL.png" />
+    <Resource Include="user-check-light.png" />
+    <Resource Include="mainwindow.baml" />
+    <Resource Include="user-check-dark.png" />
+    <Resource Include="HITL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Markdig" Version="0.37.0" />
+  </ItemGroup>
+</Project>

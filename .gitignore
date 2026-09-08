@@ -1,0 +1,83 @@
+# ============================================================
+# Human-in-the-Loop MCP Server — .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Reverse-engineering / decompilation artifacts (not source)
+# ------------------------------------------------------------
+server-source/
+server-source-v2/
+server-disasm/
+server-extracted/
+reconstructed/
+extractor/
+decompiled-source.sln
+check_pycdc.py
+compare_pyc.py
+compare_structure.py
+create_hitl_ppt.py
+decompile_pyc.py
+enhanced_decompile.py
+reconstruct.py
+verify_decompilation.py
+
+# ------------------------------------------------------------
+# Release / build output (deploy via GitHub Releases instead)
+# ------------------------------------------------------------
+release/
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+deps/
+bin/
+# PyInstaller extraction cache
+*_extracted/
+# Secrets — never commit real .env files
+.env
+*.env
+!.env.example
+node.exe
+
+# ------------------------------------------------------------
+# C# / .NET / WPF
+# ------------------------------------------------------------
+feedback-ui/bin/
+feedback-ui/obj/
+feedback-ui/publish-output/
+*.user
+.vs/
+*.suo
+
+# ------------------------------------------------------------
+# Playwright MCP temp files
+# ------------------------------------------------------------
+.playwright-mcp/
+
+# ------------------------------------------------------------
+# Empty placeholder folders
+# ------------------------------------------------------------
+human-in-the-loop-mcp-server/
+
+# ------------------------------------------------------------
+# OS & editor
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+*.code-workspace
